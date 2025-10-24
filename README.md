@@ -47,6 +47,8 @@ Users should be able to:
 
 HTML:
 
+-   Nest links inside of a `<nav>` inside of `<ul>` and `<li>` elements so your code communicates that you have a list of links
+-   Include a card's title, image, description etc.. inside of a header element
 -   Use `aria-label` for non-semantic elements, such as `<span>` and `<div>`, that include content for the user. This will be used by assistive technologies to tell the user about the type of the content it contains.
     -   Doesn't apply to decorative/styling elements.
 -   Use `tabindex="0` for elements that have self-contained content such as `article`.
@@ -70,3 +72,9 @@ CSS:
 ## Author
 
 -   Frontend Mentor - [@ayx234](https://www.frontendmentor.io/profile/ayx234)
+
+## Acknoledgements:
+
+-   [mantis](https://www.frontendmentor.io/profile/morauszkia)
+    -   Suggested I put links inside a `<nav>` in `<ul>` and `<li>` to communicate they are a list
+    -   Suggested I group card title, img, description etc.. inside of a `<header>` element

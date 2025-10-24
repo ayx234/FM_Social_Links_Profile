@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="./styles/reset.css" />
 		<link rel="stylesheet" href="./styles/styles.css" />
 	</head>
-	<body>
+	<body class="no-transition">
 		<main role="main">
 			<article
 				class="profile-card"
@@ -29,29 +29,45 @@
 				aria-labelledby="profile-name"
 				tabindex="0"
 			>
-				<img
-					class="profile-picture"
-					src="./assets/images/avatar-jessica.jpeg"
-					alt="Profile picture of Jessica Randall"
-					role="img"
-				/>
-				<h2 class="profile-name" id="profile-name">Jessica Randall</h2>
-				<span class="location" aria-label="Location"
-					>London, United Kingdom</span
-				>
-				<p class="profile-description">
-					"Front-end developer and avid reader."
-				</p>
+				<header class="profile-card-header">
+					<img
+						class="profile-picture"
+						src="./assets/images/avatar-jessica.jpeg"
+						alt="Profile picture of Jessica Randall"
+						role="img"
+					/>
+					<h2 class="profile-name" id="profile-name">
+						Jessica Randall
+					</h2>
+					<span class="location" aria-label="Location"
+						>London, United Kingdom</span
+					>
+					<p class="profile-description">
+						"Front-end developer and avid reader."
+					</p>
+				</header>
 				<nav
 					class="social-links-nav"
 					role="navigation"
 					aria-label="Social media links"
 				>
-					<a class="social-link" href="#">GitHub</a>
-					<a class="social-link" href="#">Frontend Mentor</a>
-					<a class="social-link" href="#">LinkedIn</a>
-					<a class="social-link" href="#">Twitter</a>
-					<a class="social-link" href="#">Instagram</a>
+					<ul class="social-media-list">
+						<li class="social-media-list-element">
+							<a class="social-link" href="#">GitHub</a>
+						</li>
+						<li class="social-media-list-element">
+							<a class="social-link" href="#">Frontend Mentor</a>
+						</li>
+						<li class="social-media-list-element">
+							<a class="social-link" href="#">LinkedIn</a>
+						</li>
+						<li class="social-media-list-element">
+							<a class="social-link" href="#">Twitter</a>
+						</li>
+						<li class="social-media-list-element">
+							<a class="social-link" href="#">Instagram</a>
+						</li>
+					</ul>
 				</nav>
 			</article>
 		</main>
@@ -69,5 +85,6 @@
 				<a href="https://www.frontendmentor.io/profile/ayx234">ayx</a>.
 			</div>
 		</footer>
+		<script src="./main.js"></script>
 	</body>
 </html>

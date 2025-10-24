@@ -31,8 +31,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	justify-items: center;
-	min-height: 100vh;
-	min-width: 100vh;
+	min-height: 100svh;
+	min-width: 100svw;
 	text-align: center;
 	background-color: var(--grey-900);
 	font-family: "Inter", sans-serif;
@@ -41,15 +41,15 @@ body {
 }
 
 main {
-	position: relative;
+	display: flex;
+	justify-content: center;
 }
-
 /* Class styles */
 
 .profile-card {
-	min-width: 90%;
+	min-width: 85%;
 	padding: 1.25rem 0.75rem 0.75rem; /* 20px 12px 12px */
-	margin: 0 auto 0.75rem; /* 12px */
+	margin: 0 0.75rem 0.75rem; /* 0 12px 12px */
 	border-radius: 0.625rem; /* 10px */
 	display: flex;
 	flex-direction: column;
@@ -66,6 +66,7 @@ main {
 
 .profile-name {
 	margin-bottom: 0.1875rem; /* 3px */
+	font-size: 1.5rem; /* 24px */
 }
 
 .location {
@@ -74,8 +75,7 @@ main {
 }
 
 .profile-description {
-	margin-top: 1.25rem; /* 20px */
-	margin-bottom: 0.75rem;
+	margin: 1.25rem 0 1rem; /* 20px 0 16px */
 }
 
 .social-links-nav {

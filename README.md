@@ -52,6 +52,12 @@ HTML:
 -   Use `tabindex="0` for elements that have self-contained content such as `article`.
     -   Enables navigation to the element through tabbing.
 
+CSS:
+
+-   Use svh and svw rather than vh and vw for as default for full screen width/height
+    -   vw produced a bug where changing screen with DevTools does not change the width of the page because vh/vw uses the size of the browser screen rather than the intended screen size when resizing.
+    -   svh/svw might also be better for mobile devices.
+
 ### Continued development
 
 -   CSS flexbox and grid
